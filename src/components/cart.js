@@ -22,21 +22,21 @@ const Cart = ({state, dispatch}) => {
 
 
     return(
-        <div>
-           <b> Cart</b>
+        <div className="mainContainer">
+           <b className="bCart"> Cart</b>
            <b>Subtotal: ${total}</b>
-           <div>
+           <div className="cartContainer">
             {cart.length > 0 ?
               cart.map((prod) => (
-                <div key={prod.title}>
-                   <div>
-                    <img src={prod.thumbnail} alt={prod.title}/>
-                    <div>
+                <div key={prod.title} className="prodContainer">
+                   <div className="imgContainer">
+                    <img src={prod.thumbnail} alt={prod.title} className="img"/>
+                    <div className="infContainer">
                         <span>{prod.title}</span>
                         <b>$ {prod.price}</b>
                     </div>
                    </div>
-                   <div>
+                   <div className="butonsContainer">
                     <button onClick={() => changeQty(prod.id, prod.qty -1)}>-</button>
                     <span>{prod.qty}</span>
                     <button onClick={() => changeQty(prod.id, prod.qty +1)}>+</button>
