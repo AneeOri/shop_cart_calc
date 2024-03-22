@@ -1,6 +1,6 @@
 .mainContainer{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     margin: 10;
     background-color: #ececec;
     padding: 10;
