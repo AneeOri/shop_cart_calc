@@ -1,3 +1,4 @@
+import "./products.css";
 
 
 const Products = ({state, dispatch}) => {
@@ -5,16 +6,17 @@ const Products = ({state, dispatch}) => {
     const {products, cart} = state;
 
     return(
-        <div>
+        <div className="mainContainer">
             {products.map((prod) => (
-             <div key={prod.id}>
-                <img src={prod.thumbnail} alt={prod.title}/>
-                <div>
+             <div className="prodContainer" key={prod.id}>
+                <img className="img" src={prod.thumbnail} alt={prod.title}/>
+                <div className="prods">
                    <span>{prod.title}</span>
                    <b>$ {prod.price}</b>
                 </div> 
                 {cart.some((p) => p.id === prod.id) ? (
                     <button
+                     className="button"
                       onClick={() => dispatch ({
                         type: "REMOVE_FROM_CART",
                         payload: prod,
@@ -23,6 +25,7 @@ const Products = ({state, dispatch}) => {
                     </button>
                    ) : (
                     <button
+                     className="button"
                      onClick={() => dispatch({
                         type:"ADD_TO_CART",
                         payload:{
