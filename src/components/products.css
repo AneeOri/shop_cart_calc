@@ -1,0 +1,30 @@
+.mainContainer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 80%;
+}
+.prodContainer{
+    display: flex;
+    flex-direction: column;
+    padding: 10;
+    border: 1px solid grey;
+    width: 30%;
+    margin-top: 10;
+    gap: 10;
+}
+img{
+    height: 200;
+    object-fit: cover;
+}
+.prods{
+    display: flex;
+    justify-content: space-evenly;
+}
+button{
+    padding: 5;
+    border: 0;
+    border-radius: 5;
+    background-color: rgb(72, 184, 72);
+    color: white;
+}
