@@ -1,15 +1,14 @@
 .mainContainer{
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-evenly;
-    width: 80%;
+    width: 800px;
 }
 .prodContainer{
     display: flex;
     flex-direction: column;
     padding: 10;
     border: 1px solid grey;
-    width: 30%;
     margin-top: 10;
     gap: 10;
 }
