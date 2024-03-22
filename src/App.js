@@ -1,6 +1,7 @@
 import { useEffect, useReducer } from "react";
 import { cartReducer } from "./reducers/cartReducer";
 import axios from "axios";
+import Products from "./components/products";
 
 
 
@@ -23,6 +24,12 @@ function App(){
   useEffect(() => {
      fetchProducts()
   },[]);
+
+  return(
+     <div className="mainContainer">
+        
+     </div>
+  );
 }
 
 export default App;
