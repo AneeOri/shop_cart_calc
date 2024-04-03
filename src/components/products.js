@@ -6,7 +6,7 @@ const Products = ({state, dispatch}) => {
     const {products, cart} = state;
 
     return(
-        <div className="mainContainer">
+        <div>
             {products.map((prod) => (
              <div key={prod.id} className="prodContainer">
                 <img src={prod.thumbnail} alt={prod.title}/>
