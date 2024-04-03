@@ -1,10 +1,8 @@
 .mainContainer{
     display: flex;
-    flex-direction: row;
     margin: 10;
     background-color: #ececec;
     padding: 10;
-    width: 20%;
 }
 .bCart{
     align-self: center;
