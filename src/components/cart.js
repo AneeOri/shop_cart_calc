@@ -22,7 +22,7 @@ const Cart = ({state, dispatch}) => {
 
 
     return(
-        <div className="mainContainer">
+        <div>
            <b > Cart</b>
            <b>Subtotal: ${total}</b>
            <div >
