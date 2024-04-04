@@ -23,9 +23,7 @@ function App(){
       });
       
     };
-
     fetchProducts();
-
   },[]);
 
   return(
